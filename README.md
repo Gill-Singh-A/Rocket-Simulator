@@ -4,7 +4,7 @@ The functions used in the Program for calculating properties like atmospheric de
 
 # Requirements
 Language Used = Python3<br />
-Modules used:
+Modules/Packages used:
 * math
 * sympy
 * pickle
