@@ -2,7 +2,7 @@
 Simulated the Flight of a Rocket by plotting its Altitude, Vertical Velocity, Vertical Acceleration and Vertical Forces acted upon the Rocket vs Time.
 
 # Requirements
-Language Used = Python3
+Language Used = Python3<br />
 Modules used:
 * math
 * sympy
