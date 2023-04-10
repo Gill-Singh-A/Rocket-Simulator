@@ -2,7 +2,7 @@
 Simulates the Flight of a Rocket by plotting its Altitude, Vertical Velocity, Vertical Acceleration and Vertical Forces acted upon the Rocket vs Time. <br />
 The functions used in the Program for calculating properties like atmospheric density, pressure, temperature, etc are valid upto 10km only, so the program may not work if the rocket goes above 10km
 
-# Requirements
+## Requirements
 Language Used = Python3<br />
 Modules/Packages used:
 * math
@@ -14,7 +14,7 @@ Modules/Packages used:
 * time
 * matplotlib
 
-# main.py
+### main.py
 It is the python program that does the simulation.
 It takes in the following arguments:
 * '-m',"--mass" : Mass of the Rocket without the Fuel (Dry Mass)
@@ -26,8 +26,8 @@ It takes in the following arguments:
 * '-r',"--time-resolution" : Time resolution for the simulation (Default = 0.01 seconds)
 * '-d',"--displacement-resolution" : Displacement Resolution for the simulation (Default = 0.1 metres)
 
-# read_AVA.py
+### read_AVA.py
 It reads the pickle dump file that contains data about the Altitude, Vertical Velocity and Vertical Acceleration vs Time created by main.py
 
-# read_focres.py
+### read_focres.py
 It reads the pickle dump file that contains data about the Vertical Forces acting upon the Rocket vs Time created by main.py
