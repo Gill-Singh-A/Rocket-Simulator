@@ -1,5 +1,5 @@
 # Rocket-Simulator
-Simulated the Flight of a Rocket by plotting its Altitude, Vertical Velocity, Vertical Acceleration and Vertical Forces acted upon the Rocket vs Time. <br />
+Simulates the Flight of a Rocket by plotting its Altitude, Vertical Velocity, Vertical Acceleration and Vertical Forces acted upon the Rocket vs Time. <br />
 The functions used in the Program for calculating properties like atmospheric density, pressure, temperature, etc are valid upto 10km only, so the program may not work if the rocket goes above 10km
 
 # Requirements
