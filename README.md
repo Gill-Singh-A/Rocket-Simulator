@@ -13,6 +13,11 @@ Modules/Packages used:
 * colorama
 * time
 * matplotlib
+<!-- -->
+Install the dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 ### main.py
 It is the python program that does the simulation.
