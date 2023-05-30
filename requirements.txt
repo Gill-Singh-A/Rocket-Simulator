@@ -1,0 +1,4 @@
+sympy
+matplotlib
+datetime
+colorama
