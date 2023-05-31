@@ -127,7 +127,7 @@ def simulate(data):
     display(':', f"Time Taken = {Back.MAGENTA}{t2-t1}{Back.RESET} seconds")
 
     print()
-    '''
+    
     plot.title("Gravitational Feild vs Altitude")
     plot.xlabel("Altitude (in metres)")
     plot.ylabel("Gravitational Feild (in N/Kg)")
@@ -157,7 +157,7 @@ def simulate(data):
     plot.ylabel("Speed of Sound (in metres / second)")
     plot.plot(distances, speed_of_sound)
     plot.show()
-    '''
+    
     print()
 
     t1 = time()
@@ -167,7 +167,6 @@ def simulate(data):
         t.append(total_time)
         position.append(rocket.position)
         velocity.append(rocket.velocity)
-        #rocket.acceleration = (rocket.thrust-(rocket.total_mass()*earth.feild(rocket.position)+rocket.air_drag(earth)))/rocket.total_mass()
         thrust.append(rocket.thrust)
         mass.append(rocket.total_mass())
         gravitational_force.append(mass[-1]*earth.feild(rocket.position))
@@ -203,7 +202,6 @@ def simulate(data):
         gravitational_force.append(mass[-1]*earth.feild(rocket.position))
         drag_force.append(rocket.air_drag(earth))
         net_force.append(-(gravitational_force[-1]+drag_force[-1]))
-        #rocket.acceleration = -(earth.feild(rocket.position)+rocket.air_drag(earth)/rocket.total_mass())
         rocket.acceleration = net_force[-1]/mass[-1]
         rocket.velocity += rocket.acceleration * data.time_resolution
         rocket.position += rocket.velocity * data.time_resolution
@@ -234,7 +232,6 @@ def simulate(data):
         gravitational_force.append(mass[-1]*earth.feild(rocket.position))
         drag_force.append(rocket.air_drag(earth))
         net_force.append(drag_force[-1]-gravitational_force[-1])
-        #rocket.acceleration = rocket.air_drag(earth)/rocket.total_mass()-earth.feild(rocket.position)
         rocket.acceleration = net_force[-1]/mass[-1]
         rocket.velocity += rocket.acceleration * data.time_resolution
         rocket.position += rocket.velocity * data.time_resolution
